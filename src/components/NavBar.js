@@ -1,7 +1,9 @@
 import {useState, useEffect} from 'react';
 import {Navbar, Container, Nav } from 'react-bootstrap';
-import logo from '../logo.svg';
-//I still need to get icons and img's, import also----------------------->
+import logo2 from '../assets/img/logo2.svg';
+import navIcon1 from '../assets/img/nav-icon1.svg';
+import navIcon2 from '../assets/img/nav-icon2.svg';
+import navIcon3 from '../assets/img/nav-icon3.svg';
 
 export const NavBar = () => {
     const [activelink, setActivelink] = useState('home');
@@ -21,26 +23,30 @@ export const NavBar = () => {
         return () => window.removeEventListener("scroll", onScroll);
     }, [])
 
+    const onUpdateACtiveLink = (value) => {
+        setActivelink(value);
+    }
+
     return (
         <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
         <Container>
             <Navbar.Brand href="#home">
-                <img src={'https://react-bootstrap.github.io/logo.svg'} alt="Logo" />
+                <img src={logo2} alt="Logo" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
             </Navbar.Toggle>
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-                <Nav.Link href="#home" className={activelink === 'home' ? 'active navbar-link' : 'navbar-link'} onCLick={() => setActivelink('home')}>Home</Nav.Link>
-                <Nav.Link href="#skills" className={activelink === 'skills' ? 'active navbar-link' : 'navbar-link'} onCLick={() => setActivelink('skills')}>Skills</Nav.Link>
-                <Nav.Link href="#projects" className={activelink === 'projects' ? 'active navbar-link' : 'navbar-link'} onCLick={() => setActivelink('projects')}>Projects</Nav.Link>
+                <Nav.Link href="#home" className={activelink === 'home' ? 'active navbar-link' : 'navbar-link'} onCLick={() => onUpdateACtiveLink('home')}>Home</Nav.Link>
+                <Nav.Link href="#skills" className={activelink === 'skills' ? 'active navbar-link' : 'navbar-link'} onCLick={() => onUpdateACtiveLink('skills')}>Skills</Nav.Link>
+                <Nav.Link href="#projects" className={activelink === 'projects' ? 'active navbar-link' : 'navbar-link'} onCLick={() => onUpdateACtiveLink('projects')}>Projects</Nav.Link>
             </Nav>
             <span className="navbar-text">
                 <div className="social-icon">
-                    <a href="#"><img src={'https://react-bootstrap.github.io/logo.svg'} alt="Logo" /></a>
-                    <a href="#"><img src={'https://react-bootstrap.github.io/logo.svg'} alt="Logo" /></a>
-                    <a href="#"><img src={'https://react-bootstrap.github.io/logo.svg'} alt="Logo" /></a>
+                    <a href="#"><img src={navIcon1} alt="Logo" /></a>
+                    <a href="#"><img src={navIcon2} alt="Logo" /></a>
+                    <a href="#"><img src={navIcon3} alt="Logo" /></a>
                 </div>
                 <button className="vvd" onCLick={() => console.log('connect')}><span>Let’s Connect</span></button>
             </span>
