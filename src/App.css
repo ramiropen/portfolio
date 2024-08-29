@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   line-height: normal;
 }
-/********* Navbar CSS **********/
+/**** Navbar  ****/
  nav.navbar {
   padding: 18px 0;
   position: fixed;
@@ -76,7 +76,7 @@ span.navbar-text {
 .social-icon a {
   width: 42px;
   height: 42px;
-  background: rgba(217, 217, 217, 0.1);
+  background: rgba(255, 255, 255, 0.4);
   display: inline-flex;
   border-radius: 50%;
   margin-right: 6px;
@@ -96,6 +96,7 @@ span.navbar-text {
   transition: 0.3s ease-in-out;
 }
 .social-icon a:hover::before {
+  background-color: #8e94f2;
   transform: scale(1);
 }
 .social-icon a img {
@@ -125,7 +126,7 @@ span.navbar-text {
   width: 0%;
   height: 100%;
   position: absolute;
-  background-color: #fff;
+  background-color: #8e94f2;
   left: 0px;
   top: 0px;
   z-index: -1;
@@ -187,3 +188,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-color: transparent;
 }
 
+/**** Banner ****/
+.banner {
+  margin-top: 0;
+  padding: 260px 0 100px 0;
+  background-image: url('./assets/img/background-img.jpg');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* complete Banner CSS */
