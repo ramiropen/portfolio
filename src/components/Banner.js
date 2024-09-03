@@ -50,8 +50,8 @@ export const Banner = () => {
                     <p>About myself goes here!!!</p>
                     <button onClick={() => console.log('connect')}>Let's connect<ArrowRightCircle size={25} /> </button>
                     </Col>
-                    <Col xs={12} md={6} xl={5}>
-                    <img src={headerImg}  alt="Header Img"/>
+                    <Col  xs={12} md={6} xl={5}>
+                    <img src={headerImg}  alt="Header Img" />
                     </Col>
                 </Row>
             </Container>
