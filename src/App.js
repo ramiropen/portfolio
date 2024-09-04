@@ -1,5 +1,5 @@
 import './App.css';
-import { NavBar } from './components/Navbar.js';
+import { NavBar } from './components/NavBar.js';
 import { Banner } from './components/Banner.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
