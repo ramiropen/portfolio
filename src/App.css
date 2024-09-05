@@ -1,17 +1,17 @@
 /************ Custom Font ************/
 @font-face {
 	font-family: Centra;
-	src: url('./assets/font/CentraNo2-Bold\ \(1\).ttf');
+	src: url('./assets/font/Gelasio-Regular.ttf');
 	font-weight: 700;
 }
 @font-face {
 	font-family: Centra;
-	src: url('./assets/font/CentraNo2-Medium.ttf');
+	src: url('./assets/font/Gelasio-Regular.ttf');
 	font-weight: 500;
 }
 @font-face {
 	font-family: Centra;
-	src: url('./assets/font/CentraNo2-Book.ttf');
+	src: url('./assets/font/Gelasio-Regular.ttf');
 	font-weight: 400;
 }
 
@@ -85,10 +85,11 @@ p.danger {
 nav.navbar {
   padding: 18px 0;
   position: fixed;
+  height: 12%;
   width: 100%;
   top: 0;
   z-index: 9999;
-  transition:  0.32s ease-in-out;
+  transition:  0.25s ease-in-out;
 }
 nav.navbar.scrolled {
   padding: 0px 0;
