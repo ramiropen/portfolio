@@ -1,12 +1,12 @@
 /************ Custom Font ************/
 @font-face {
 	font-family: Centra;
-	src: url('./assets/font/Gelasio-Regular.ttf');
+	src: url('./assets/font/Gelasio-Bold.ttf');
 	font-weight: 700;
 }
 @font-face {
 	font-family: Centra;
-	src: url('./assets/font/Gelasio-Regular.ttf');
+	src: url('./assets/font/Gelasio-Medium.ttf');
 	font-weight: 500;
 }
 @font-face {
@@ -96,19 +96,19 @@ nav.navbar.scrolled {
   background-color: #121212;
 }
 nav.navbar a.navbar-brand {
-    width: 9%;
+    width: 10%;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
-  color: #fff !important;
+  color: #fff;
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 18px;
-  opacity: 0.75;
 }
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
+    color: #f1c664;
 }
 span.navbar-text {
     display: flex;
@@ -128,14 +128,15 @@ span.navbar-text {
     align-items: center;
     justify-content: center;
     line-height: 1;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid;
+    border-color: #f1c664;
 }
 .social-icon a::before {
     content: "";
     width: 42px;
     height: 42px;
     position: absolute;
-    background-color: #ffffff;
+    background-color: #f1c664;
     border-radius: 50%;
     transform: scale(0);
 	transition: 0.3s ease-in-out;
@@ -154,7 +155,8 @@ span.navbar-text {
 .navbar-text button {
   font-weight: 700;
   color: #fff;
-  border: 1px solid #fff;
+  border: 1px solid #f1c664;
+  border-radius: 10px;
   padding: 18px 34px;
   font-size: 18px;
   margin-left: 18px;
@@ -166,12 +168,13 @@ span.navbar-text {
   z-index: 1;
 }
 .navbar-text button::before {
+  border-radius: 9px;
   content: "";
   width: 0%;
   height: 100%;
   position: absolute;
-  background-color: #fff;
-  left: 0;
+  background-color: #f1c664;
+  left: 0.2px;
   top: 0;
   z-index: -1;
   transition: 0.3s ease-in-out;
@@ -183,7 +186,7 @@ span.navbar-text {
 	content: "";
 	width: 100%;
 	height: 100%;
-	position: absolute;
+	position: absolute;;
 }
 nav.navbar .navbar-toggler:active,
 nav.navbar .navbar-toggler:focus {
@@ -236,19 +239,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 0;
   padding: 260px 0 100px 0;
   background-image: url('./assets/img/banner-bg.png');
-  background-position: top center;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-.banner .tagline {
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  font-size: 20px;
-  margin-bottom: 16px;
-  display: inline-block;
 }
 .banner h1 {
   font-size: 65px;
@@ -259,7 +252,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 .banner p {
-  color: #B8B8B8;
+  color: #f1c664;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -281,7 +274,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1;
 }
 .banner button:hover svg {
-  margin-left: 25px;
+  color: #f1c664;
+  margin-left: 50px;
 }
 .banner img {
   animation: updown 3s linear infinite;
@@ -334,10 +328,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 0 auto 15px auto;
 }
 .background-image-left {
-  top: 28%;
+  top: 10%;
   position: absolute;
   bottom: 0;
-  width: 40%;
+  width: 100%;
   z-index: -4;
 }
 
