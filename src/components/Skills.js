@@ -30,7 +30,7 @@ export const Skills = () => {
             <Container>
                 <Row>
                     <Col>
-                        <div className='skill-bx'>
+                        <div className='skill-bx' img src={skillsBg} alt='Image'>
                             <h2>Skills</h2>
                             <p>LOREM IPSUM CARE OTHER HAS NATURE FOR SURE<br></br>More Lorem IPSUM FINALLY SPACE CONTAINER MUST LAST</p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
